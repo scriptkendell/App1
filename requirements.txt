@@ -37,3 +37,20 @@ Check out the live demo: [https://yourusername.github.io/quantum-ai-assistant](h
 To run this application locally:
 
 1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/quantum-ai-assistant.git
+   ```
+
+2. Navigate to the project directory:
+   ```
+   cd quantum-ai-assistant
+   ```
+
+3. Install required packages:
+   ```
+   pip install -r requirements.txt
+   ```
+
+4. Run the Streamlit app:
+   ```
+   streamlit run app.py
