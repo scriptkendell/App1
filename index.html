@@ -169,16 +169,6 @@
                 clearTimeout(loadingTimeout);
                 loading.style.display = 'none';
                 iframe.style.display = 'block';
-                
-                // Send message to iframe to restore chat if available
-                try {
-                    iframe.contentWindow.postMessage({
-                        type: 'streamlit:restoreChat',
-                        value: true
-                    }, '*');
-                } catch (e) {
-                    console.log('Could not send message to iframe', e);
-                }
             };
             
             // Handle iframe load error
